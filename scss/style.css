@@ -1,15 +1,37 @@
 header img {
   margin-top: 44px;
   margin-left: -28px; }
+header .btn {
+  float: right;
+  height: 45px;
+  width: 130px;
+  margin-top: 39px;
+  margin-left: 16px; }
+header #contacts {
+  float: right;
+  margin-top: 35px; }
+header ul {
+  list-style-type: none; }
 header ul li {
-  font-size: 40px;
-  list-style-type: none;
-  display: inline-block;
-  padding: 10px;
-  width: 200px;
-  color: #0b60a9; }
-header ul p {
-  font-size: 16px;
-  padding: 10px; }
+  margin-left: 15px;
+  float: left; }
+header .first-icon {
+  float: left;
+  font-size: 34px;
+  margin: 0px 20px; }
+header .first-icon-info {
+  float: left; }
+header .second-icon {
+  float: left;
+  font-size: 34px;
+  margin: 0px 20px; }
+header .second-icon-info {
+  float: left; }
+header .third-icon {
+  float: left;
+  font-size: 34px;
+  margin: 0px 20px; }
+header .third-icon-info {
+  float: left; }
 
 /*# sourceMappingURL=style.css.map */

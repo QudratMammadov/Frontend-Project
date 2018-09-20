@@ -9,20 +9,56 @@ header{
         margin-left: -28px;
 
     }
-    ul li{
-        font-size: 40px;
-        list-style-type: none;
-        display: inline-block;
-        padding: 10px;
-        width: 200px;
-        color: $primary-color;
-
-     
-    }
-    ul p{
-        font-size:$font-size;
-        padding: 10px;
+   .btn{
+       float: right;
+       height: 45px;
+       width: 130px;
+       margin-top: 39px;
+       margin-left: 16px;
        
-     
+   }
+  
+   #contacts{
+      float: right;
+      margin-top: 35px;
+   }
+   ul{
+       list-style-type: none;
+      
+   }
+   ul li{
+       margin-left: 15px;
+       float: left;
+   }
+   .first-icon{
+       float: left;
+       font-size: 34px;
+       margin: 0px 20px;
+      
+   }
+   .first-icon-info{
+       float: left;
+
+   }
+   .second-icon{
+    float: left;
+    font-size: 34px;
+    margin: 0px 20px;
+   
     }
+    .second-icon-info{
+    float: left;
+
+    }
+    .third-icon{
+        float: left;
+        font-size: 34px;
+        margin: 0px 20px;
+       
+        }
+    .third-icon-info{
+        float: left;
+    
+        }
+
 }
