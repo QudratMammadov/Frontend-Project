@@ -33,5 +33,9 @@ header .third-icon {
   margin: 0px 20px; }
 header .third-icon-info {
   float: left; }
+header .bg {
+  background-color: #0b60a9; }
+header .social {
+  color: #fff; }
 
 /*# sourceMappingURL=style.css.map */
