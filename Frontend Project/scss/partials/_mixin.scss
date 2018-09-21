@@ -1,0 +1,5 @@
+@mixin setTransition($type,$seconds){
+    -ms-transition: $type $seconds; 
+    -webkit-transition: $type $seconds; 
+    transition: $type $seconds;
+}
