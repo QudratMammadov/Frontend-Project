@@ -2,25 +2,37 @@
 @import 'partials/mixin';
 
 
+    .container {
+        max-width: 1180px;
+        
+    }
 
+// Header
 header{
+   
     img{
         margin-top: 44px;
-        margin-left: -28px;
 
     }
    .btn{
+       background-color: $primary-color;
+       color: $secondary-color;
+       border-radius: 0px;
        float: right;
        height: 45px;
-       width: 130px;
-       margin-top: 39px;
-       margin-left: 16px;
+       width: 126.95px;
+       margin-top: 7px;
+       margin-left: 9px;
+       padding: 10px;
+       
        
    }
   
    #contacts{
       float: right;
-      margin-top: 35px;
+      margin-top: 27px;
+      margin-right: 35px;
+     
    }
    ul{
        list-style-type: none;
@@ -32,43 +44,101 @@ header{
    }
    .first-icon{
        float: left;
-       font-size: 34px;
+       font-size: 36px;
        margin: 0px 20px;
+       color: $helper-color2;
       
    }
    .first-icon-info{
        float: left;
+       font-size: 14px;
+       margin-top: 8px;
+       font-family: $font-family;
+
 
    }
    .second-icon{
-    float: left;
-    font-size: 34px;
-    margin: 0px 20px;
+        float: left;
+        font-size: 36px;
+        margin: 0px 20px;
+        color: $helper-color2;
    
     }
     .second-icon-info{
-    float: left;
+        float: left;
+        font-size: 14px;
+        margin-top: 8px;
+        font-family: $font-family;
+    
 
     }
     .third-icon{
         float: left;
-        font-size: 34px;
+        font-size: 36px;
         margin: 0px 20px;
+        color: $helper-color2;
        
         }
     .third-icon-info{
         float: left;
+        font-size: 14px;
+        margin-top: 8px;
+        font-family: $font-family;
+        
     
         }
-    .bg{
+
+}
+// Header 2
+.bg{
         background-color: $primary-color;
      
-    }  
-    .social{
-        color: $secondary-color;
-    }  
-   
-        
-       
-    
 }
+#menu{
+    .nav-link{
+        color:$secondary-color;
+        font-size: 14px;
+        font-weight: 500;
+        position: relative;
+        text-transform: uppercase;
+        font-family: 'Roboto', sans-serif;
+        margin: 8px 0px;
+        .dropdown-menu a{
+            color:$helper-color;
+       
+        }
+    }
+   
+   .social{
+        ul{
+            color: $secondary-color;
+            list-style-type: none;
+            display: inline-block;
+            position: relative;
+            top:25px;
+        li{
+            display: inline;
+            margin: 30px 10px;
+            text-align: center;
+            
+        i{
+            width: 30px;
+            
+            display: inline-block;
+        }    
+            &:hover{
+                background-color: #4943a7;
+                }   
+            }
+        }
+   }
+
+
+       
+       
+      
+      
+   
+}  
+
+    
