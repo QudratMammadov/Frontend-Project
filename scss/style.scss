@@ -1,9 +1,11 @@
 @import 'partials/variables';
 @import 'partials/mixin';
+@import 'partials/button';
+@import 'partials/links';
 
 
     .container {
-        max-width: 1180px;
+        max-width: 1200px;
         
     }
 
@@ -14,20 +16,6 @@ header{
         margin-top: 44px;
 
     }
-   .btn{
-       background-color: $primary-color;
-       color: $secondary-color;
-       border-radius: 0px;
-       float: right;
-       height: 45px;
-       width: 126.95px;
-       margin-top: 7px;
-       margin-left: 9px;
-       padding: 10px;
-       
-       
-   }
-  
    #contacts{
       float: right;
       margin-top: 27px;
@@ -54,6 +42,13 @@ header{
        font-size: 14px;
        margin-top: 8px;
        font-family: $font-family;
+       a{
+        color: $helper-color;
+        &:hover{
+            text-decoration: none;
+        }
+       }
+      
 
 
    }
@@ -87,6 +82,10 @@ header{
         
     
         }
+    .btn{
+        margin-left: 10px;
+        margin-top: 10px;
+     }    
 
 }
 // Header 2
@@ -115,22 +114,52 @@ header{
             list-style-type: none;
             display: inline-block;
             position: relative;
-            top:25px;
-        li{
+            top:15px;
+            li{
             display: inline;
             margin: 30px 10px;
             text-align: center;
             
-        i{
-            width: 30px;
+                i{
+                 width: 30px;
+                 display: inline-block;
+                 @include setTransition(all,0.6s)
+                }    
             
-            display: inline-block;
-        }    
-            &:hover{
-                background-color: #4943a7;
                 }   
+        
+            .fa-facebook-f{
+                @extend %links;
+                &:hover{
+                    background-color: #3b5998;
+                }
             }
-        }
+            .fa-youtube{
+                @extend %links;
+                &:hover{
+                    background-color: #bb0000;
+                }
+            }
+            .fa-twitter{
+                @extend %links;
+                &:hover{
+                    background-color:  #00aced;
+                } 
+            }
+            .fa-linkedin-in{
+                @extend %links;
+                &:hover{
+                    background-color:#007bb6;
+                } 
+            }
+            .fa-instagram{
+                @extend %links;
+                &:hover{
+                    background-color:#517fa4;
+                } 
+            }
+            
+        }  
    }
 
 
@@ -140,5 +169,105 @@ header{
       
    
 }  
+//Slider Section
+
+#slider{
+        #carouselExampleIndicators{
+         
+            .carousel-inner{
+
+                .carousel-item{
+                        position: relative;
+                    .carousel-caption{
+                        
+
+                        h3{
+                            a{
+                                position: absolute;
+                                left: 200px;
+                                bottom: 300px;
+                                color: $helper-color;
+                                font-size: 64px;
+                                text-decoration: none;
+                                display: inline-block;
+                            }
+                        }
+                        p{
+    
+                        }
+                    }  
+                    .btns{
+                        .blue-btn{
+    
+                        }
+                        .white-btn{
+    
+                        }
+                    }
+                    position: relative;
+                    .carousel-control-prev{
+                        position: absolute;
+                        left: 40px;
+                        top: 50%;
+                        width: 45px;
+                        height: 45px;
+                        background-color: rgba(14, 14, 14, 0.26);
+                        @include setTransition(all,0.2s);
+                        
+                        &:hover{
+                            background-color: $primary-color;
+                        }
+                  }
+                    .carousel-control-next{
+                    position: absolute;
+                    right: 40px;
+                    top: 50%;
+                    width: 45px;
+                    height: 45px;
+                    background-color: rgba(14, 14, 14, 0.26);
+                    @include setTransition(all,0.2s);
+                    
+                    &:hover{
+                        background-color: $primary-color;
+                        }
+                }
+                    
+                .carousel-indicators{
+                    li{
+                        width: 12px;
+                        height: 12px;
+                        background-color: $secondary-color;
+                        border-radius: 12px;
+                        margin: 0px 4.5px;
+                        cursor: pointer;
+                    }
+                    .active{
+                        width: 12px;
+                        height: 30px;
+                        background-color: $primary-color;
+                        border-radius: 12px;
+                        margin: 0px 4.5px;
+                        text-align: center;
+                       
+                    }
+                    
+                }
+                
+                }
+               
+            }
+            
+        
+        
+        
+        }
+          
+    
+    
+    
+    
+ 
+    
+}
 
     

@@ -1,18 +1,42 @@
+.black-btn, .blue-btn, .white-btn {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  border: none;
+  text-align: center;
+  padding: 15px 20px;
+  border-radius: 0;
+  -ms-transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s; }
+
+.black-btn {
+  background-color: #0b60a9;
+  color: #fff;
+  padding: 15px 30px; }
+  .black-btn:hover {
+    background-color: #222;
+    text-decoration: none;
+    color: #fff; }
+
+.blue-btn:hover {
+  background-color: #fff;
+  text-decoration: none; }
+
+.white-btn:hover {
+  background-color: #0b60a9;
+  text-decoration: none; }
+
+#menu .social ul .fa-facebook-f, #menu .social ul .fa-youtube, #menu .social ul .fa-twitter, #menu .social ul .fa-linkedin-in, #menu .social ul .fa-instagram {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin-bottom: 5px; }
+
 .container {
-  max-width: 1180px; }
+  max-width: 1200px; }
 
 header img {
   margin-top: 44px; }
-header .btn {
-  background-color: #0b60a9;
-  color: #fff;
-  border-radius: 0px;
-  float: right;
-  height: 45px;
-  width: 126.95px;
-  margin-top: 7px;
-  margin-left: 9px;
-  padding: 10px; }
 header #contacts {
   float: right;
   margin-top: 27px;
@@ -32,6 +56,10 @@ header .first-icon-info {
   font-size: 14px;
   margin-top: 8px;
   font-family: "Roboto", sans-serif; }
+  header .first-icon-info a {
+    color: #222; }
+    header .first-icon-info a:hover {
+      text-decoration: none; }
 header .second-icon {
   float: left;
   font-size: 36px;
@@ -52,6 +80,9 @@ header .third-icon-info {
   font-size: 14px;
   margin-top: 8px;
   font-family: "Roboto", sans-serif; }
+header .btn {
+  margin-left: 10px;
+  margin-top: 10px; }
 
 .bg {
   background-color: #0b60a9; }
@@ -71,15 +102,76 @@ header .third-icon-info {
   list-style-type: none;
   display: inline-block;
   position: relative;
-  top: 25px; }
+  top: 15px; }
   #menu .social ul li {
     display: inline;
     margin: 30px 10px;
     text-align: center; }
     #menu .social ul li i {
       width: 30px;
-      display: inline-block; }
-    #menu .social ul li:hover {
-      background-color: #4943a7; }
+      display: inline-block;
+      -ms-transition: all 0.6s;
+      -webkit-transition: all 0.6s;
+      transition: all 0.6s; }
+  #menu .social ul .fa-facebook-f:hover {
+    background-color: #3b5998; }
+  #menu .social ul .fa-youtube:hover {
+    background-color: #bb0000; }
+  #menu .social ul .fa-twitter:hover {
+    background-color: #00aced; }
+  #menu .social ul .fa-linkedin-in:hover {
+    background-color: #007bb6; }
+  #menu .social ul .fa-instagram:hover {
+    background-color: #517fa4; }
+
+#slider #carouselExampleIndicators .carousel-inner .carousel-item {
+  position: relative;
+  position: relative; }
+  #slider #carouselExampleIndicators .carousel-inner .carousel-item .carousel-caption h3 a {
+    position: absolute;
+    left: 200px;
+    bottom: 300px;
+    color: #222;
+    font-size: 64px;
+    text-decoration: none;
+    display: inline-block; }
+  #slider #carouselExampleIndicators .carousel-inner .carousel-item .carousel-control-prev {
+    position: absolute;
+    left: 40px;
+    top: 50%;
+    width: 45px;
+    height: 45px;
+    background-color: rgba(14, 14, 14, 0.26);
+    -ms-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s; }
+    #slider #carouselExampleIndicators .carousel-inner .carousel-item .carousel-control-prev:hover {
+      background-color: #0b60a9; }
+  #slider #carouselExampleIndicators .carousel-inner .carousel-item .carousel-control-next {
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    width: 45px;
+    height: 45px;
+    background-color: rgba(14, 14, 14, 0.26);
+    -ms-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s; }
+    #slider #carouselExampleIndicators .carousel-inner .carousel-item .carousel-control-next:hover {
+      background-color: #0b60a9; }
+  #slider #carouselExampleIndicators .carousel-inner .carousel-item .carousel-indicators li {
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    border-radius: 12px;
+    margin: 0px 4.5px;
+    cursor: pointer; }
+  #slider #carouselExampleIndicators .carousel-inner .carousel-item .carousel-indicators .active {
+    width: 12px;
+    height: 30px;
+    background-color: #0b60a9;
+    border-radius: 12px;
+    margin: 0px 4.5px;
+    text-align: center; }
 
 /*# sourceMappingURL=style.css.map */
