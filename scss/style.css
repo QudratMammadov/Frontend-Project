@@ -1,4 +1,4 @@
-.black-btn, .blue-btn, .white-btn {
+.black-btn, .blue-btn, .white-btn, #slider #carouselExampleIndicators .carousel-inner .carousel-item .btns .blue-btn, #slider #carouselExampleIndicators .carousel-inner .carousel-item .btns .white-btn {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   border: none;
@@ -124,42 +124,100 @@ header .btn {
   #menu .social ul .fa-instagram:hover {
     background-color: #517fa4; }
 
+#slider #carouselExampleIndicators .carousel-inner .carousel-control-prev {
+  position: absolute;
+  left: 40px;
+  top: 50%;
+  width: 45px;
+  height: 45px;
+  background-color: rgba(14, 14, 14, 0.26);
+  -ms-transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s; }
+  #slider #carouselExampleIndicators .carousel-inner .carousel-control-prev:hover {
+    background-color: #0b60a9; }
+#slider #carouselExampleIndicators .carousel-inner .carousel-control-next {
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  width: 45px;
+  height: 45px;
+  background-color: rgba(14, 14, 14, 0.26);
+  -ms-transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s; }
+  #slider #carouselExampleIndicators .carousel-inner .carousel-control-next:hover {
+    background-color: #0b60a9; }
 #slider #carouselExampleIndicators .carousel-inner .carousel-item {
   position: relative;
   position: relative; }
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
   #slider #carouselExampleIndicators .carousel-inner .carousel-item .carousel-caption h3 a {
     position: absolute;
     left: 200px;
-    bottom: 300px;
-    color: #222;
+    bottom: 400px;
+    color: #fff;
+    font-weight: 900;
     font-size: 64px;
     text-decoration: none;
-    display: inline-block; }
-  #slider #carouselExampleIndicators .carousel-inner .carousel-item .carousel-control-prev {
+    display: inline-block;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 10px; }
+  #slider #carouselExampleIndicators .carousel-inner .carousel-item .carousel-caption p {
     position: absolute;
-    left: 40px;
-    top: 50%;
-    width: 45px;
-    height: 45px;
-    background-color: rgba(14, 14, 14, 0.26);
-    -ms-transition: all 0.2s;
-    -webkit-transition: all 0.2s;
-    transition: all 0.2s; }
-    #slider #carouselExampleIndicators .carousel-inner .carousel-item .carousel-control-prev:hover {
-      background-color: #0b60a9; }
-  #slider #carouselExampleIndicators .carousel-inner .carousel-item .carousel-control-next {
+    left: 200px;
+    bottom: 300px;
+    color: black;
+    font-weight: 900;
+    font-size: 20px;
+    display: inline-block;
+    font-family: "Roboto", sans-serif;
+    font-size: 19px;
+    margin-bottom: 45px;
+    color: #e2e1e1;
+    font-weight: 400;
+    padding-left: 50px;
+    width: 730px;
+    max-width: 100%; }
+  #slider #carouselExampleIndicators .carousel-inner .carousel-item .btns .blue-btn {
+    width: 166px;
+    height: 51px;
+    background-color: #0b60a9;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
     position: absolute;
-    right: 40px;
-    top: 50%;
-    width: 45px;
-    height: 45px;
-    background-color: rgba(14, 14, 14, 0.26);
-    -ms-transition: all 0.2s;
-    -webkit-transition: all 0.2s;
-    transition: all 0.2s; }
-    #slider #carouselExampleIndicators .carousel-inner .carousel-item .carousel-control-next:hover {
-      background-color: #0b60a9; }
-  #slider #carouselExampleIndicators .carousel-inner .carousel-item .carousel-indicators li {
+    bottom: 200px;
+    left: 400px;
+    cursor: pointer; }
+    #slider #carouselExampleIndicators .carousel-inner .carousel-item .btns .blue-btn:hover {
+      background: #fff;
+      color: #222; }
+  #slider #carouselExampleIndicators .carousel-inner .carousel-item .btns .white-btn {
+    width: 146px;
+    height: 51px;
+    margin-left: 35px;
+    background: #fff;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #222;
+    font-weight: 500;
+    position: absolute;
+    bottom: 200px;
+    left: 550px;
+    cursor: pointer; }
+    #slider #carouselExampleIndicators .carousel-inner .carousel-item .btns .white-btn:hover {
+      background-color: #0b60a9;
+      color: #fff; }
+  #slider #carouselExampleIndicators .carousel-inner .carousel-item .carousel-indicators .icon {
+    display: inline-block;
     width: 12px;
     height: 12px;
     background-color: #fff;

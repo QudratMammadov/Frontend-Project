@@ -172,53 +172,24 @@ header{
 //Slider Section
 
 #slider{
+   
+   
         #carouselExampleIndicators{
          
             .carousel-inner{
-
-                .carousel-item{
-                        position: relative;
-                    .carousel-caption{
-                        
-
-                        h3{
-                            a{
-                                position: absolute;
-                                left: 200px;
-                                bottom: 300px;
-                                color: $helper-color;
-                                font-size: 64px;
-                                text-decoration: none;
-                                display: inline-block;
-                            }
-                        }
-                        p{
-    
-                        }
-                    }  
-                    .btns{
-                        .blue-btn{
-    
-                        }
-                        .white-btn{
-    
-                        }
+                .carousel-control-prev{
+                    position: absolute;
+                    left: 40px;
+                    top: 50%;
+                    width: 45px;
+                    height: 45px;
+                    background-color: rgba(14, 14, 14, 0.26);
+                    @include setTransition(all,0.2s);
+                    &:hover{
+                        background-color: $primary-color;
                     }
-                    position: relative;
-                    .carousel-control-prev{
-                        position: absolute;
-                        left: 40px;
-                        top: 50%;
-                        width: 45px;
-                        height: 45px;
-                        background-color: rgba(14, 14, 14, 0.26);
-                        @include setTransition(all,0.2s);
-                        
-                        &:hover{
-                            background-color: $primary-color;
-                        }
-                  }
-                    .carousel-control-next{
+                }
+                .carousel-control-next{
                     position: absolute;
                     right: 40px;
                     top: 50%;
@@ -226,14 +197,107 @@ header{
                     height: 45px;
                     background-color: rgba(14, 14, 14, 0.26);
                     @include setTransition(all,0.2s);
-                    
                     &:hover{
                         background-color: $primary-color;
                         }
-                }
+                }    
+                .carousel-item{
+                    position: relative;
+                       
+                    .carousel-caption{
+                        
+
+                        h3{
+                            @keyframes fadeIn {
+                                0% {opacity: 0;}
+                                100% {opacity: 1;}
+                             } 
+                            a{
+                                position: absolute;
+                                left: 200px;
+                                bottom: 400px;
+                                color: $secondary-color;
+                                font-weight: 900;
+                                font-size: 64px;
+                                text-decoration: none;
+                                display: inline-block;
+                                font-family: $font-family;
+                                margin-bottom: 10px;
+                                
+                            }
+                        }
+                        p{
+                                position: absolute;
+                                left: 200px;
+                                bottom: 300px;
+                                color: black;
+                                font-weight: 900;
+                                font-size: 20px;
+                                display: inline-block;
+                                font-family: $font-family;
+                                font-size: 19px;
+                                margin-bottom: 45px;
+                                color: #e2e1e1;
+                                font-weight: 400;
+                                padding-left: 50px;
+                                width: 730px;
+                                max-width: 100%;
+                            
+                                
+                        }
+                    }  
+                    .btns{
+                      
+                        .blue-btn{
+                            @extend %button;
+                            width: 166px;
+                            height: 51px;
+                            background-color: $primary-color;
+                            color: $secondary-color;
+                            font-family: $font-family;
+                            font-size: 14px;
+                            text-transform: uppercase;
+                            font-weight: 500;
+                            position: absolute;
+                            bottom: 200px;
+                            left: 400px;
+                            cursor: pointer;
+                            &:hover{
+                                background: $secondary-color;
+                                color: $helper-color;
+                            }
+
+                            
+    
+                        }
+                        .white-btn{
+                            @extend %button;
+                            width: 146px;
+                            height: 51px;
+                            margin-left: 35px;
+                            background: $secondary-color;
+                            font-family: $font-family;
+                            font-size: 14px;
+                            text-transform: uppercase;
+                            color: $helper-color;
+                            font-weight: 500;
+                            position: absolute;
+                            bottom: 200px;
+                            left: 550px;
+                            cursor: pointer;
+                            &:hover{
+                                background-color: $primary-color;
+                                color: $secondary-color;
+                                
+                            }
+                        }
+                    }
+                    position: relative;
+            
                     
                 .carousel-indicators{
-                    li{
+                    .icon{
+                        display: inline-block;
                         width: 12px;
                         height: 12px;
                         background-color: $secondary-color;
@@ -260,12 +324,12 @@ header{
         
         
         
-        }
+        
           
     
     
     
-    
+        }
  
     
 }
